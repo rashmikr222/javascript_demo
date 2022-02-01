@@ -8,47 +8,43 @@ function updateTime(){
     let hours = todaysDate.getHours();
     let minutes = todaysDate.getMinutes();
     let seconds = todaysDate.getSeconds();
-
     let date = todaysDate.getDate();
+    // day
     let day = dayNames[todaysDate.getDay()];
+    // month
     let month = monthNames[todaysDate.getMonth()]
     let year = todaysDate.getFullYear()
-
     if(hours <= 9){
-        document.getElementById("hours").innerHTML = "0" + hours + ":";    
+        document.getElementById("hours").innerHTML = "0" + hours;    
     }
     else
     {
-        document.getElementById("hours").innerHTML = hours + ":";    
+        document.getElementById("hours").innerHTML = hours;    
     }
-    
     if(minutes <= 9){
-        document.getElementById("minutes").innerHTML = "0" + minutes + ":";    
+        document.getElementById("minutes").innerHTML = "0" + minutes;    
     }
     else
     {
-        document.getElementById("minutes").innerHTML = minutes + ":";    
+        document.getElementById("minutes").innerHTML = minutes;    
     }
     if(seconds <= 9){
-        document.getElementById("seconds").innerHTML = "0" + seconds + ":";    
+        document.getElementById("seconds").innerHTML = "0" + seconds;    
     }
     else
     {
-        document.getElementById("seconds").innerHTML = seconds + ":";    
+        document.getElementById("seconds").innerHTML = seconds;    
     }
     if(hours >= 24 || hours < 12 ){
-        let addAm = document.getElementById('am');
+        let addAm = document.getElementById('am_pm');
         addAm.innerHTML = "AM"
     } else if(hours >= 12 || hours <= 24)
         {
-            let addPm = document.getElementById('pm');
+            let addPm = document.getElementById('am_pm');
             addPm.innerHTML = "PM";
         }
-
     document.getElementById("day").innerHTML = day + "," + date + "/" + month.slice(0,3)  + "/" + year;
-
 }
-
 updateTime();
 setInterval(function() {
     updateTime()

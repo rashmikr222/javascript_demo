@@ -1,11 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Martel:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@300&display=swap');
 .digital_container{
-    width: 100%;
-    background: linear-gradient(gray,black);
+    background-color: rgba(41,40,56,255);
+    width: 440px;
+    height: 250px;
+    padding: 44px 4px;
+}
+.display_time p{
     color: white;
-    font-size: 60px;
-    border: 10px ridge white;
-    letter-spacing: 15px;
-    font-family: 'Martel', serif;
-    padding: 20px 20px 20px 20px;
+    width: 80px;
+    height: 80px;
+    font-size: 40px;
+    padding: 15px 12px;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    border-radius: 10px;
+    font-weight: 300;
+}
+.hour{
+    background-color: rgba(249,86,88,255);
+}
+.minute{
+    background-color:rgba(45,202,116,255);
+}
+.seconds{
+    background-color:rgba(245,188,88,255) ;
+}
+.day{
+    background-color: rgba(108,118,125,255);
 }

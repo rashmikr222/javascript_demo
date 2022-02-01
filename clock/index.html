@@ -12,20 +12,16 @@
 <body>
     <!-- digital clock -->
     <div class="container mt-5 justify-content-center align-items-center digital_container">
-        <div class="d-flex justify-content-center align-items-center display_time">
-            <p id="hours" class="text-center ml-1 align-self-center">  </p>
-            <p id="minutes" class="text-center ml-1 align-self-center"></p>
-            <p id="seconds" class="text-center ml-1 align-self-center"></p>
-            <p id="am"></p>
-            <p id="pm"></p>
+        <div class="d-flex justify-content-center display_time">
+            <p id="hours" class="text-center ml-1 align-self-center hour">  </p>
+            <p id="minutes" class="text-center ml-1 align-self-center minute"></p>
+            <p id="seconds" class="text-center ml-1 align-self-center seconds"></p>
+            <p id="am_pm" class="bg-secondary text-center ml-1"></p>
         </div>
-        <div>
-            <p id="day" class="text-center"></p>    
+        <div class="display_day">
+            <p id="day" class="text-center text-white day"></p>    
         </div>
-        
     </div>
-    
-    
     <script src="assets/js/jquery.slim.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/custom.js"></script>
