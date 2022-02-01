@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Days Count</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body>
+    
+    <div class="container mt-5">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-8">
+                <h3 class="text-primary">Number of days count</h3>
+                    <div class="form-group">
+                        <select class="custom-select">
+                            <option selected>Please select the month </option>
+                            <option value="january">January</option>
+                            <option value="february">February</option>
+                            <option value="march">March</option>
+                            <option value="april">April</option>
+                            <option value="may">May</option>
+                            <option value="june">June</option>
+                            <option value="july">July</option>
+                            <option value="august">August</option>
+                            <option value="september">September</option>
+                            <option value="october">October</option>
+                            <option value="november">November</option>
+                            <option value="december">December</option>
+                        </select>
+                    </div>    
+                    <div class="form-group">
+                        <label for="inputYear">Enter the year</label>
+                        <input type="text" id="userInput" name="inputYear" onkeyup="isCharacter()" class="form-control w-50" maxlength="4" />
+                    </div>
+                    <button onclick="displayDays()" class="btn btn-primary mb-2" type="submit" id="submitButton">submit</button>
+                    <p id="message" class="text-success"></p>
+                </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.slim.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+</html>

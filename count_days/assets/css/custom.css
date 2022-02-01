@@ -1,0 +1,25 @@
+.digital_container{
+    width: 200px;
+    height: 250px;
+    background: black;
+    color: white;
+    font-size: 60px;
+    border: 2px solid white;
+}
+
+.error{
+    color: red;
+    font-size: 20px;
+}
+.displayMessage{
+    color: green;
+    font-size: 20px;
+}
+button[disabled]:active, 
+button[disabled]
+{
+    color: grey !important;
+    background-color: #ddd !important;
+    background: #ddd !important;
+    border: none !important;
+}
