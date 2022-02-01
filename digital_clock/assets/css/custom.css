@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel:wght@200&display=swap');
+.digital_container{
+    width: 100%;
+    background: linear-gradient(gray,black);
+    color: white;
+    font-size: 60px;
+    border: 10px ridge white;
+    letter-spacing: 15px;
+    font-family: 'Martel', serif;
+    padding: 20px 20px 20px 20px;
+}
