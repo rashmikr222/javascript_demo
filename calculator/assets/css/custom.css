@@ -1,0 +1,27 @@
+.calculator_container{
+    width: 225px;
+    height: 70vh;
+    background-color:#22252D;
+    border-radius: 20px;
+}
+.modes{
+    background-color: #2A2D37;
+}
+.dark_mode{
+    padding: 0px 3px 0px 0px;
+}
+.edit{
+    height: 150px;
+}
+.calculator_buttons{
+    background-color:#2A2D37;
+    border-radius: 14px;
+    height: 250px;
+    
+}
+.number_button{
+    width: 44px;
+    height: 35px;
+    margin: 5px 0px 0px 1px;
+    background-color: #282B33;
+}
